@@ -4,37 +4,31 @@ Before follow these steps please Configure the ESP-IDF [release 4.4](https://git
 ### 1. Clone the git-hub repository 
 
 ```bash
-git clone https://github.com/alibukharai/Blogs.git 
-
-```
-### 2. Update the submodules
-
-```bash
-git submodule update --init --recursive 
+git clone https://github.com/mo-faruque/esp_dl_handsign_recognition.git 
 
 ```
 
-### 3. Change the working directory to model_deployment
+### 2. Change the working directory to model_deployment
 
 ```bash 
 cd ESP-DL/model_deployment
 
 ```
 
-### 4. Reconfigure the Cmake 
+### 3. Reconfigure the Cmake 
 
 ```bash 
 idf.py reconfigure 
 
 ```
 
-### 5. Select the target ESP32
+### 4. Select the target ESP32
 
 ```bash 
 idf.py set-target esp32s3
 
 ```
-### 6. Build the project
+### 5. Build the project
 
 ```bash
 idf.py build flash monitor 
